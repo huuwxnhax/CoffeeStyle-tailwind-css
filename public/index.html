@@ -4,27 +4,28 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./imgs/favicon/logo.png" sizes="16x16">
         <title>CoffeStyle-tailwindcss</title>
         <link href="./output.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div id="root">
-            <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
-                <header class="py-6 mx-10">
-                    <nav class="flex flex-row justify-between items-center">
+            <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+                <header class="p-6 mx-auto">
+                    <nav class="flex flex-row justify-between items-center relative">
                         <!-- Logo -->
                         <div class="logo basis-2/6/6 text-center text-xl font-semibold cursor-pointer">
                             CoffeeStyle.
                         </div>
 
                         <!-- Menu -->
-                        <ul class="basis-3/6 flex justify-end items-center gap-8 text-xs text-gray-500 font-medium">
+                        <ul id="thn-top-menu" class="basis-3/6 hidden  lg:flex lg:justify-end lg:items-center lg:gap-8 text-xs text-gray-500 font-medium">
                             <li
-                                class="cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-sky-400 after:h-0.5 after:w-full after:transition-all after:duration-300 after:ease-in-out after:origin-left after:scale-x-0 hover:after:scale-x-100"
+                                class="cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-sky-400 after:lg:h-0.5 after:lg:w-full after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out after:lg:origin-left after:lg:scale-x-0 hover:after:lg:scale-x-100"
                             >
                                 <a href="#">HOME</a>
                             </li>
-                            <li class="ct-top-menu-item">
+                            <li class="ct-top-menu-item ct-top-menu-item-active">
                                 <a href="#">OUR PRODUCTS</a>
                             </li>
                             <li class="ct-top-menu-item">
@@ -41,7 +42,7 @@
                             </li>
                         </ul>
                         <!-- cart -->
-                        <ul class="basis-1/6 flex justify-start items-center ml-16 text-xs text-gray-500 font-medium">
+                        <ul class="basis-3/6 lg:basis-1/6 flex lg:justify-start justify-end items-center ml-16 text-xs text-gray-500 font-medium">
                             <li class="">
                                 <a href="#" class="flex items-center">
                                     <svg
@@ -64,9 +65,13 @@
                                 </a>
                             </li>
                         </ul>
+                        <div class="basis-1/6 lg:hidden flex items-center cursor-pointer sm:px-8 px-3">
+                            <svg id="thn-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" class="ct-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                              </svg>
+                        </div>
                     </nav>
                 </header>
-
                 <main>
                     <div class="slider">slider</div>
                     <div class="story">story</div>
@@ -81,4 +86,5 @@
             </div>
         </div>
     </body>
+    <script src="./main.js" type="text/javascript" async></script>
 </html>
