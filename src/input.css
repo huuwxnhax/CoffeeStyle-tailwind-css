@@ -10,7 +10,7 @@
 
 /* ct = custom tailwind */
 .ct-top-menu-item {
-    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-sky-400 after:lg:h-0.5 after:lg:w-full after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out after:lg:origin-left after:lg:scale-x-0 hover:after:lg:scale-x-100;
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-full after:lg:transition-all after:lg:duration-300 after:lg:ease-in-out after:lg:origin-left after:lg:scale-x-0 hover:after:lg:scale-x-100;
 }
 
 .ct-top-menu-item-active {
@@ -23,4 +23,16 @@
 
 .ct-cirle {
     @apply rounded-full w-5 h-5 flex items-center justify-center px-1.5;
+}
+
+.thn-subheadline {
+    @apply justify-center items-center mb-96;
+}
+
+.thn-subheadline-label {
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
+}
+
+.thn-subheadline-deco-line {
+    @apply w-8 h-px bg-gray-200;
 }
