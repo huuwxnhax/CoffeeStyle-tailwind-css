@@ -26,7 +26,7 @@
 }
 
 .thn-subheadline {
-    @apply justify-center items-center mb-96;
+    @apply justify-center items-center mb-20;
 }
 
 .thn-subheadline-label {
@@ -35,4 +35,8 @@
 
 .thn-subheadline-deco-line {
     @apply w-8 h-px bg-gray-200;
+}
+
+.thn-button {
+    @apply text-coffee-400 w-11/12 uppercase tracking-wider py-3 px-6 bottom-3 m-auto left-0 right-0 hidden group-hover:block group-hover:animate-fadeIn text-center text-sm font-semibold cursor-pointer hover:bg-opacity-90;
 }
